@@ -1,0 +1,90 @@
+:root {
+  --green: #07AB80;
+  --gray: #8F8E98;
+  --subtle: #DDDDDD;
+  --light: #E4F1CE;
+}
+
+@media (min-width: 768px) {
+  .about-box {
+    position: absolute;
+    top: 30%;
+    right: 10%;
+  }
+}
+
+/* SECTION ELEMENT SELECTORS */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  background-color: var(--green);
+  color: white;
+}
+
+header {
+  background-color: var(--green);
+}
+
+/* SECTION CLASS SELECTORS */
+.green {
+  color: var(--green);
+}
+
+.subtle {
+  color: var(--subtle)
+}
+
+.gray-bg {
+  background-color: var(--subtle);
+}
+
+.b-shadow,
+.more:hover,
+.submit:hover {
+  box-shadow: 0 3px 15px black;
+}
+
+.hero-img {
+  background-image: url(https://images.unsplash.com/photo-1686226347032-b82efa11af93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+  min-height: 75vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.check-text {
+  font-size: 13px;
+}
+
+.submit {
+  background-color: rgb(7, 171, 128, .04);
+  color: var(--green);
+}
+
+.img-text {
+  border-left: 4px solid var(--green);
+  height: fit-content;
+}
+
+.more {
+  color: white;
+  background-color: var(--green);
+}
+
+/* SECTION PSEUDO SELECTORS */
+.submit:hover {
+  color: white;
+  background-color: var(--green);
+}
+
+.check:checked {
+  background-color: var(--green);
+}
+
+.submit:active,
+.more:active {
+  box-shadow: none;
+}
